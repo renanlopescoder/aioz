@@ -1,0 +1,63 @@
+<div class="col s12 m6 l7 offset-l7">
+  <div class="card z-depth-3 hoverable aioz-bg">
+    <div class="card-content">
+      <div id="test6">
+        <p class="light">
+          <h5 class="cinzel-font green-theme-text">AioZ</h5>
+          Descrição da AioZ
+        </p>
+      </div>
+      <br>
+      <form>
+        <div class="row">
+          <div class="col s12">
+            <div class="row left-align">
+              <div class="input-field col s12 m12 l12">
+                <i class="material-icons prefix grey-text text-darken-1">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate" ng-model="newGamer.username" required>
+                <label for="icon_prefix">Nome</label>
+              </div>
+              <div class="input-field col s12 m12 l12">
+                <i class="material-icons prefix grey-text text-darken-1">email</i>
+                <input id="icon_email" type="email" class="validate" ng-model="newGamer.email">
+                <label for="icon_email">Email</label>
+              </div>
+              <div class="input-field col s12 m12 l12">
+                <i class="material-icons prefix grey-text text-darken-1">email</i>
+                <input id="icon_email" type="email" class="validate" ng-model="newGamer.email">
+                <label for="icon_email">Whats</label>
+              </div>
+              <div class="input-field col s12 m12 l12">
+                <i class="material-icons prefix grey-text text-darken-1"></i>
+                <input id="icon_email" type="email" class="validate" ng-model="newGamer.email">
+                <label for="icon_email">Jogo</label>
+              </div>
+              <div class="input-field col s12 m12 l12">
+                <i class="material-icons prefix grey-text text-darken-1"></i>
+                <input id="icon_email" type="email" class="validate" ng-model="newGamer.email">
+                <label for="icon_email">Patente</label>
+              </div>
+              <div class="input-field inline col s12 m12 l12">
+                <input id="date" type="date" class="datepicker" ng-model="newDocument.documentDate">
+                <label for="date" data-error="wrong" data-success="right">Data</label>
+              </div>
+            </div>
+            <a class="btn btn grey darken-2" ng-submit="createGamer()">Cadastrar</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/materializecss/init.js"></script>
+<script src="assets/js/materializecss/materialize.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.select').material_select();
+  });
+  $('.datepicker').pickadate({
+    selectMonths: true,
+    selectYears: 15
+  });
+</script>

@@ -1,0 +1,73 @@
+<navbar></navbar>
+<div class="container">
+
+  <!-- Primeira collection lista com link secundário -->
+  <!-- First collection list with secondary link -->
+
+  <div class="row">
+    <ul class="collection with-header col s12 m6 l6">
+      <li class="collection-header">
+        <h4>Documents Collection</h4>
+      </li>
+      <li class="collection-item" ng-repeat="document in documents">
+        <div>{{document.title}}<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Segunda collection lista com link secundário com ícones -->
+  <!-- Second collection list with icons  -->
+
+  <div class="row">
+    <ul class="collection col s12 m6 l6">
+      <li class="collection-item avatar" ng-repeat="document in documents">
+        <i class="material-icons circle">folder</i>
+        <span class="title">{{document.title}}</span>
+        <p>{{document.content}}</p>
+        <p>Por: {{document.author}}</p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Terceira collection lista com popout e ícone -->
+  <!-- Third collection list with popout and icon  -->
+
+  <div class="row">
+    <ul class="collapsible popout col s12 m6 l6" data-collapsible="accordion">
+      <li ng-repeat="document in documents">
+        <div class="collapsible-header"><i class="material-icons">folder</i>{{document.title}}</div>
+        <div class="collapsible-body"><span>{{document.content}}</span></div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Quarta collection lista usando cartões -->
+  <!-- Fourth collection list using cards -->
+
+  <div class="row" ng-repeat="document in documents">
+    <div class="col s12 m6 l6">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">{{document.title}}</span>
+          <p>{{document.content}}</p>
+        </div>
+        <div class="card-action">
+          <p>Por: {{document.author}}</p>
+          <a href="#">Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Final do Container -->
+  <!-- Closing container -->
+</div>
+
+<script src="assets/js/materializecss/init.js"></script>
+<script>
+  $('.collapsible').collapsible({
+    cordion: false
+  });
+
+</script>

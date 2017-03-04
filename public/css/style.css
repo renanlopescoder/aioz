@@ -1,0 +1,175 @@
+
+/* Images */
+
+.pack-icon{
+  max-height: 30px!important;
+  margin-top: 8px;
+  margin-right: 15px;
+  float: left;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.aioz-logo{
+  margin-left: -200px!important;
+}
+
+.aioz-bg{
+  background-color: rgba(0,0,0,.7)!important;
+}
+
+/* Background Colors */
+
+.pack-theme-text{
+  color: #d6ab7f!important;
+}
+
+.select-dropdown li span{
+  color: #af8d6b;
+}
+
+.pack-theme-text-darken{
+  color: #af8d6b!important;
+  transition: .3s;
+}
+
+.pack-theme-text-darken:hover{
+  color: #d6ab7f!important;
+}
+
+.pack-theme-background{
+  background-color: #d6ab7f!important;
+}
+
+.pack-theme-background-darken{
+  background-color: #af8d6b!important;
+}
+
+.pack-indicator .indicator{
+    background-color: #af8d6b!important;
+}
+
+.pack-yellow-text{
+  color: #ffde00;
+}
+
+.pack-yellow-text-darken{
+  color: #cfb400;
+}
+
+.pack-yellow{
+  background-color: #ffde00;
+}
+
+.pack-yellow-darken{
+  background-color: #cfb400;
+}
+
+.indigo-text.text-lighten-1  .indicator{
+  background-color: #d6ab7f;
+}
+
+/* Spaces */
+
+.card-list{
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+}
+
+.top-nav {
+  padding: 20px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+/*.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}*/
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  .aioz-logo{
+    margin-left:inherit!important;
+  }
+  .aioz-card{
+    margin: 0 auto!important;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* FONTS */
+
+.cinzel-font{
+  font-family: 'Cinzel', serif;
+}
+
+.bevan-font{
+  font-family: 'Bevan', cursive;
+}
+
+.font-2x{
+  font-size: 1.15em!important;
+}
+
+/* LAYERS */
+
+.black-layer{
+  background-color: rgba(0,0,0,.7)
+}
+.white-layer{
+  background-color: rgba(255,255,255,.85)
+}
+
+code{
+  font-weight: bolder;
+  font-family: Courier New, Courier, monospace;
+  font-size: 1.1em;
+}
+
+header, main, footer {
+  padding-left: 300px!important;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0!important;
+  }
+}
+          

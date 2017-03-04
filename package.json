@@ -1,0 +1,22 @@
+{
+  "name": "MEANPack",
+  "version": "1.0.0",
+  "description": "Application Starter Package MEAN",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "author": "Renan Lopes",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "express-load": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*"
+  },
+  "engines": {
+    "node": "6.3.1"
+  }
+}

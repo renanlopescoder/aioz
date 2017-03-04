@@ -1,0 +1,36 @@
+<main>
+  <div class="row black-layer">
+    <h4 class="header center cinzel-font col s12 pack-yellow-text">Banco de Dados</h4>
+  </div>
+  <div class="row">
+    <div class="col s12 m12 l12">
+      <ul class="collection with-header">
+        <li class="collection-header">
+          <h4><img src="img/external-logos/mongodb.png" alt="" class="logo"></h4>
+          <p> O "M" do M.E.A.N é de MongoDB que é um banco de dados orientado a documento multi-plataforma que tem alta performance
+            e de fácil escalabilidade, a grande vantagem de usar o MongoDB em uma aplicação JavaScript é que o banco trabalha
+            com coleções de documentos do tipo chave valor uma estrutura muito parecida com o JSON o que reduz a impedancia
+            da nossa aplicação.
+          </p>
+          <p>Saiba Mais: <a href="https://mongodbwise.wordpress.com/2014/05/22/mongodb-guia-rapido/">MongoDB Wise Guia Rápido</a></p>
+          <p> 
+            <img class="pack-icon" src="img/box-logo.png"> 
+            O M.E.A.N Pack utiliza o <a href="http://mongoosejs.com/">mongoose</a> por padrão que é uma api que facilita o uso do MongoDB em aplicações NodeJS. Nosso arquivo
+            de configuração da base de dados está na pasta <code>config/database.js</code> acessando este arquivo temos o seguinte código.</p>
+          <p class="grey lighten-3 col s12">
+            // Local database configuration<br> // Configuração da Base de dados local<br>
+            <code>mongoose.connect
+              ('mongodb://localhost/nomeSeuBanco');
+            </code><br>
+          </p>
+          <p>Para configurar deve criar uma base de dados usando terminal do MongoDB e o passando como parâmetro a função do
+            mongoose.connect após esta configuração seu banco de dados tem que estar rodando para que a aplicação funcione
+            corretamente. Acesse o terminal e execute o comando mongod para inicializar seu MongoDB</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+<script src="assets/js/materializecss/materialize.js"></script>
+<script src="assets/js/materializecss/init.js"></script>
