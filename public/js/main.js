@@ -8,6 +8,11 @@ app.config(['$routeProvider','$locationProvider',
         controller: "UserController"
     });
 
+    $routeProvider.when('/register/success', {
+        templateUrl : 'templates/register.success.html',
+        controller: "UserController"
+    });
+
     $routeProvider.when('/about', {
         templateUrl : 'templates/about.html',
     });
