@@ -4,47 +4,29 @@ app.config(['$routeProvider','$locationProvider',
   function($routeProvider, $locationProvider) {
 
     $routeProvider.when('/', {
-        templateUrl : 'templates/register.html',
+        templateUrl : 'templates/register-intro.html',
         controller: "UserController"
     });
 
-    $routeProvider.when('/register/success', {
-        templateUrl : 'templates/register.success.html',
+    $routeProvider.when('/esports', {
+        templateUrl : 'templates/register-esports.html',
         controller: "UserController"
     });
 
-    $routeProvider.when('/about', {
-        templateUrl : 'templates/about.html',
+    $routeProvider.when('/sports', {
+        templateUrl : 'templates/register-sports.html',
+        controller: "UserController"
     });
 
-    $routeProvider.when('/instructions', {
-        templateUrl : 'templates/instructions.html'
+    $routeProvider.when('/register/success/esports', {
+        templateUrl : 'templates/register-esports.success.html',
+        controller: "UserController"
     });
 
-    $routeProvider.when('/cloud', {
-        templateUrl : 'templates/cloud.html'
+    $routeProvider.when('/register/success/sports', {
+        templateUrl : 'templates/register-sports.success.html',
+        controller: "UserController"
     });
 
-    $routeProvider.when('/database', {
-        templateUrl : 'templates/database.html'
-    });
-
-    $routeProvider.when('/directives', {
-        templateUrl : 'templates/directives.html'
-    });
-
-    $routeProvider.when('/services', {
-        templateUrl : 'templates/services.html'
-    });
-
-    $routeProvider.when('/css', {
-        templateUrl : 'templates/style.html'
-    });
-
-    $routeProvider.when('/documentation', {
-        templateUrl : 'templates/documentation.html',
-        controller: "DocumentController"
-    });
-
-//    $routeProvider.otherwise ({ redirectTo: '/' });
+   $routeProvider.otherwise ({ redirectTo: '/' });
 }]);

@@ -1,7 +1,7 @@
 {
-  "name": "MEANPack",
+  "name": "AioZ",
   "version": "1.0.0",
-  "description": "Application Starter Package MEAN",
+  "description": "eSports platform landing page",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
