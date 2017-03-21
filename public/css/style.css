@@ -6,6 +6,10 @@
   background-color: rgba(0,0,0,.2);
 }
 
+.multiple-select{
+  min-height: 100px;
+}
+
 /* Images */
 
 .pack-icon{

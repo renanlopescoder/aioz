@@ -15,11 +15,19 @@ var schema = mongoose.Schema({
 		type: String,
 		required: true
 	},
-	jogo : {
+	plataforma : {
+		type: String,
+		required: true
+	},
+	jogos : {
 		type: String,
 		required: true
 	},
   patente : {
+		type: String,
+		required: true
+	},
+	perfil : {
 		type: String,
 		required: true
 	},

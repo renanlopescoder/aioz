@@ -36,14 +36,14 @@
                       </div>
                       <div class="col s12 m12 l12">
                         <label>Perfil</label>
-                        <select class="select browser-default">
+                        <select class="select browser-default" ng-model="newGamer.perfil">
                           <option value="" selected disabled>Selecione</option>
-                          <option value="eSports">eSports</option>
+                          <option value="Esporte Eletrônico">Esporte Eletrônico</option>
                           <option value="Esporte">Esporte</option>
                         </select>
                       </div>
                     </div>
-                    <a class="btn btn grey darken-2" ng-click="createGamer()">Inscreva-se</a>
+                    <a class="btn btn grey darken-2" ng-click="nextRegister(newGamer)">Inscreva-se</a>
                   </div>
                 </div>
 
