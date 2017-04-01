@@ -25,7 +25,8 @@ app.controller('UserController', function($scope, $http, auth) {
       });
   };
 
-  $scope.nextRegister = function(newGamer){
+  $scope.nextRegister = function(){
+    var newGamer = $scope.newGamer;
     if(newGamer.perfil == 'Esporte Eletrônico'){
       window.location = '#/esports';
     }
@@ -39,7 +40,7 @@ app.controller('UserController', function($scope, $http, auth) {
     var newGamer = $scope.newGamer;
     $http.post('/createUser', newGamer)
       .then(function(response){
-        $scope.newGamer = {};
+        
         window.location = '/#/register/success';
       }, function (error){
         console.log(error);

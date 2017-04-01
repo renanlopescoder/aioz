@@ -1,13 +1,8 @@
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-// Local database configuration
-// Configuração da Base de dados local
-// mongoose.connect('mongodb://localhost/renanlopesorg');
-
 // Heroku open-source access database
 // Acesso a base de dados open-source pelo Heroku
-// mongoose.connect('mongodb://opentaskmanager:openpassword@ds161018.mlab.com:61018/heroku_6gzfjvz0');
 mongoose.connect('mongodb://aioz:aiozteste@ds117830.mlab.com:17830/heroku_z2wr4bvt');
 
 

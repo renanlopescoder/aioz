@@ -1,42 +1,38 @@
 var mongoose = require('mongoose');
 
-//Função construtora criando Schema usando banco orientado a documento
 var schema = mongoose.Schema({
-	//Atributos do documento
 	username: {
 		type: String,
-		required: true
+		required: false
 	},
 	email: {
 		type: String,
-		required: true
+		required: false
 	},
   whats : {
 		type: String,
-		required: true
+		required: false
 	},
 	plataforma : {
 		type: String,
-		required: true
+		required: false
 	},
 	jogos : {
 		type: String,
-		required: true
+		required: false
 	},
   patente : {
 		type: String,
-		required: true
+		required: false
 	},
 	perfil : {
 		type: String,
-		required: true
+		required: false
 	},
   data : {
 		type: String,
 		required: false
 	}
 });
-
-//Compilando schema
 
 mongoose.model('User', schema);

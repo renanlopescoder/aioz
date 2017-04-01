@@ -13,7 +13,6 @@
     "body-parser": "*",
     "express": "*",
     "express-load": "*",
-    "jsonwebtoken": "*",
     "mongoose": "*"
   },
   "engines": {
