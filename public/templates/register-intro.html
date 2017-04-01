@@ -21,29 +21,29 @@
                     <div class="row left-align">
                       <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix grey-text text-darken-1">account_circle</i>
-                        <input id="icon_prefix" type="text" class="validate" ng-model="newGamer.username" required>
+                        <input id="icon_prefix" type="text" class="validate" ng-model="newUser.username" required>
                         <label for="icon_prefix">Nome</label>
                       </div>
                       <div class="input-field col s12 m6 l6">
                         <i class="material-icons prefix grey-text text-darken-1">chat</i>
-                        <input id="icon_email" type="text" class="validate" ng-model="newGamer.whats">
+                        <input id="icon_email" type="text" class="validate" ng-model="newUser.whats">
                         <label for="icon_email">WhatsApp</label>
                       </div>
                       <div class="input-field col s12 m12 l12">
                         <i class="material-icons prefix grey-text text-darken-1">email</i>
-                        <input id="icon_email" type="email" class="validate" ng-model="newGamer.email">
+                        <input id="icon_email" type="email" class="validate" ng-model="newUser.email">
                         <label for="icon_email">Email</label>
                       </div>
                       <div class="col s12 m12 l12">
                         <label>Perfil</label>
-                        <select class="select browser-default" ng-model="newGamer.perfil">
+                        <select class="select browser-default" ng-model="newUser.perfil">
                           <option value="" selected disabled>Selecione</option>
                           <option value="Esporte Eletrônico">Esporte Eletrônico</option>
                           <option value="Esporte">Esporte</option>
                         </select>
                       </div>
                     </div>
-                    <a class="btn btn grey darken-2" ng-click="nextRegister()">Inscreva-se</a>
+                    <button class="btn btn yellow darken-3" ng-click="nextRegister()">Inscreva-se</button>
                   </div>
                 </div>
 

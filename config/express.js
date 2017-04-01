@@ -1,8 +1,8 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var app = express();
+let express = require('express');
+let bodyParser = require('body-parser');
+let app = express();
 app.use(bodyParser.json());
-var load = require('express-load');
+let load = require('express-load');
 
 //Configurações do Express
 
@@ -12,7 +12,6 @@ var load = require('express-load');
 
 	load('app/models')
 	.then('app/api')
-	.then('app/routes/auth.js') 
 	.then('app/routes')
 	.into(app);
 
