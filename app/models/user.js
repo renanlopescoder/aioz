@@ -13,6 +13,16 @@ var schema = mongoose.Schema({
 		type: String,
 		required: false
 	},
+	data : {
+		type: String,
+		required: false
+	},
+	perfil : {
+		type: String,
+		required: false
+	},
+
+	// Gamers
 	plataforma : {
 		type: String,
 		required: false
@@ -25,14 +35,25 @@ var schema = mongoose.Schema({
 		type: String,
 		required: false
 	},
-	perfil : {
+	// Players
+
+	sports : {
 		type: String,
 		required: false
 	},
-  data : {
+	weight : {
 		type: String,
 		required: false
-	}
+	},
+  height : {
+		type: String,
+		required: false
+	},
+	experience : {
+		type: String,
+		required: false
+	},
+
 });
 
 mongoose.model('User', schema);

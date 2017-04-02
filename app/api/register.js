@@ -6,7 +6,6 @@ module.exports = (app) => {
   let api = {};
 
   api.createUser = (req, res) => {
-    
     model.create(req.body).then(
       (user) => {
         res.json(user);

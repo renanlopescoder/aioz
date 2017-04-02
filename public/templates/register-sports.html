@@ -1,17 +1,17 @@
 <div class="slider fullscreen s-container">
   <ul class="slides">
     <li class="velocity-animating active" style="opacity: 0.986696; transform: translateX(0px) translateY(0px);">
-      <img src="img/bg.jpg">
+      <img src="img/sport-bg.jpg">
       <div class="caption center-align" style="opacity: 1; transform: translateY(-100px) translateX(0px);">
         <div class="row">
-          <img class="aioz-logo col l2" src="img/logo.jpg">
+          <img class="aioz-logo col l2" src="img/logo-white.png">
           <div class="col s12 m6 l7 offset-l7">
             <div class="card z-depth-3 hoverable aioz-bg">
               <div class="card-content">
                 <div id="test6">
                   <p class="light">
                     <h3 class="cinzel-font green-theme-text">AioZ</h3>
-                    <p>Participe com os melhores e monte sua equipe</p>
+                    <p>Jogue com os melhores e monte seu time</p>
                     <p>inscreva-se agora e receba os primeiros convites</p>
                   </p>
                 </div>
@@ -20,33 +20,36 @@
                     <div class="col s12">
                       <div class="row left-align">
                         <div class="col s12 m6 l6">
-                          <label>Jogos de interesse?</label>
-                          <select class="select browser-default multiple-select" multiple ng-model="newUser.jogos">
+                          <label>Esportes selecione os de seu interesse</label>
+                          <select class="select browser-default multiple-select" multiple ng-model="newUser.sports">
                             <option value="" selected disabled>Selecione</option>
-                            <option value="League of Legends">League of Legends</option>
-                            <option value="CS GO">CS GO</option>
-                            <option value="Dota 2">Dota 2</option>
-                            <option value="Overwatch">Overwatch</option>
-                            <option value="Rainbow">Rainbow</option>
+                            <option value="Futebol">Futebol</option>
+                            <option value="Vôlei">Vôlei</option>
+                            <option value="Motocross">Motocross</option>
+                            <option value="Bicicross">Bicicross</option>
+                            <option value="Natação">Natação</option>
                           </select>
-                      </div>
-                        <div class="input-field col s12 m6 l6">
-                          <i class="material-icons prefix grey-text text-darken-1">stars</i>
-                          <input id="icon_email" type="text" class="validate" ng-model="newUser.patente">
-                          <label for="icon_email">Patente</label>
                         </div>
-                        <div class="col s12 m12 l12">
-                          <label>Plataforma</label>
-                          <select class="select browser-default" ng-model="newUser.plataforma">
-                            <option value="" selected disabled>Selecione</option>
-                            <option value="PC">PC</option>
-                            <option value="Mobile">Mobile</option>
-                            <option value="X-box">X-box</option>
-                            <option value="Playstation">Playstation</option>
-                          </select>
+                        <div class="input-field col s12 m6 l6">
+                          <input id="outras-plataformas" type="text" class="validate" ng-model="newUser.weight">
+                          <label for="outros-plataformas">Peso</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                          <input id="icon_email" type="text" class="validate" ng-model="newUser.height">
+                          <label for="icon_email">Altura</label>
+                        </div>
+                        <div class="input-field col s12 m12 l12">
+                          <input id="outros-jogos" type="text" class="validate" ng-model="sportsInput">
+                          <label for="outros-jogos">Outros Esportes?</label>
+                        </div>
+
+                        <div class="input-field col s12 m12 l12">
+                          <textarea id="icon_email" type="text" class="validate materialize-textarea" ng-model="newUser.experience">
+                          </textarea>
+                          <label for="icon_email">Conte-nos um pouco de sua experiencia! (Opcional)</label>
+                        </div>
                       </div>
-                      </div>
-                      <a class="btn btn grey darken-2" ng-click="createUser()">Inscreva-se</a>
+                      <a class="btn btn blue darken-2" ng-click="createUser(sportsInput)">Inscreva-se</a>
                     </div>
                   </div>
                 
@@ -69,6 +72,4 @@
     selectMonths: true,
     selectYears: 15
   });
-        
-
 </script>
